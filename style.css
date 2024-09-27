@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.geral{
+    height: 900px;
+}
+
+.container{
+    width: 900px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    background-color: black;
+}
+
+.menu2{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 70px;
+}
+
+
+.menu-left{
+    display: flex;
+    flex: 2;
+}
+
+.menu-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+
+
+.logo{
+    background-image: url(assets/logo-png-image_3984179.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100px;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    margin: 1px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.links a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.links, a {
+    text-decoration: none;
+    margin: 7px;
+    font-weight: bold;
+    color: white !important;
+    font-family: "Open Sans", sans serif ;
+}
+
+a:hover {
+    color: palegreen !important ;
+    letter-spacing: 5px;
+    
+ 
+}
+
+.btn-contato{
+
+    height: 70px;
+}
+
+.btn-contato, img-site button{
+   
+  
+    font-size: 18px;
+    background-color: transparent;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+   
+}
+
+.btn-contato button:hover, img-site button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+section.img-site {
+    background-image: url(assets/agencia-viajes.webp);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100vw; 
+    color: #fff;
+}
+
+.img-site .inter{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+.img-site .text h1{
+    font-size: 4em;
+    line-height: 70px;
+    color: #00800;
+    
+    
+}
+
+.img-site .text h1 span{
+    display: block;
+    font-weight: 800;
+  
+}
+
+.img-site .text p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.img-site .text p span{
+    display: block;
+}
+
+.img-site button{
+    width: 190px;
+    height: 30px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+
+    background-color: palegreen;
+    ;
+}
+
+.news-left {
+    text-align: center; 
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.container3 {
+    background-image: url(assets/verde.jpg);
+    background-attachment: fixed; 
+    width: 100%;
+    background-size: cover;
+    height: 350px;
+   
+
+}
+
+.titulo{
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+   
+    line-height: 70px;
+   
+}
+
+.destinos-container, .pacotes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+   
+ 
+}
+
+.destino-item, .pacote-item {
+    background-color: #fff;
+    padding: 15px;
+    flex: 1 1 calc(25% - 20px); 
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    background-color: gainsboro;
+   
+}
+
+.destino-item:hover, .pacote-item:hover {
+    transform: scale(1.05); 
+}
+
+.rodape {
+    display: flex;
+    background-color: black;
+    margin-top: 25px;
+    height: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;font-weight: bold;
+  
+    
+}
+
+
+
+
+ 
+
+   
+
+
+
