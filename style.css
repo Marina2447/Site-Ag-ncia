@@ -3,28 +3,59 @@
     padding: 0;
 }
 
+
+
 .geral{
     height: 900px;
+    background-color: blanchedalmond;
+    
+   
 }
 
 .container{
     width: 900px;
+    max-width: 900px;
+    width: 100%;
+   
+    
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header{
+    width: 100%;
+
+  
+    
 }
 
 section{
     display: flex;
     justify-content: center;
+
+    
 }
 
 .menu {
-    background-color: black;
+    background-color: gray;
+
+  
 }
+
+
 
 .menu2{
     display: flex;
     justify-content: center;
     width: 900px;
     height: 70px;
+
+    
 }
 
 
@@ -56,6 +87,10 @@ section{
     display: flex;
     align-items: center;
     margin: 10px;
+
+
+   
+  
     
 }
 
@@ -101,8 +136,8 @@ a:hover {
 }
 
 section.img-site {
-    background-image: url(assets/agencia-viajes.webp);
-    height: 80vh;
+    background-image: url(assets/aviao2.avif);
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -163,9 +198,10 @@ section.img-site {
     justify-content: center; 
     align-items: center; 
     padding: 20px; 
+   
 
-    background-color: palegreen;
-    ;
+   
+    
 }
 
 .news-left {
@@ -173,25 +209,30 @@ section.img-site {
     background-color: white; 
     padding: 20px; 
     border-radius: 8px; 
+
+   
 }
 
 h2 {
     font-size: 2em;
     margin-bottom: 10px;
+   
 }
 
 p {
     font-size: 1.2em;
     line-height: 1.6;
-    color: #555;
+    color: black;
+   
 }
 
 .container3 {
-    background-image: url(assets/verde.jpg);
+    background-image: url(assets/transiçao.jpg);
     background-attachment: fixed; 
     width: 100%;
     background-size: cover;
     height: 350px;
+  
    
 
 }
@@ -200,12 +241,17 @@ p {
     align-items: center;
     justify-content: center;
     font-weight: 800;
-   
     line-height: 70px;
    
 }
 
-.destinos-container, .pacotes-container {
+
+
+
+
+
+
+.destinos-container {
     display: flex;
     flex-wrap: wrap;
     gap: 40px; 
@@ -213,45 +259,240 @@ p {
  
 }
 
-.destino-item, .pacote-item {
-    background-color: #fff;
+.destino-item {
+  
     padding: 15px;
     flex: 1 1 calc(25% - 20px); 
-    border-radius: 8px;
+    border-radius: 15px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     font-size: 1.2em;
     font-weight: bold;
-    color: black;
+   
     background-color: gainsboro;
+    
    
 }
 
-.destino-item:hover, .pacote-item:hover {
+.destino-item:hover {
     transform: scale(1.05); 
 }
 
-.rodape {
+
+
+
+
+
+
+
+section.vantagens{
+    padding: 80px 0;
+    background-color: beige;
+}
+
+.vantagens .itens-container{
     display: flex;
-    background-color: black;
-    margin-top: 25px;
-    height: 50px;
-    color: white;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 16px;font-weight: bold;
-  
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 30px;
+}
+
+.vantagens .itens-container .img-itens img{
+    max-width: 330px;
+}
+
+.vantagens .itens-container .texto-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container .texto-itens h3 span{
+    font-weight: 300;
+}
+
+.itens-container .texto-itens p{
+    justify-content: center;
     
+}
+
+section.cont{
+    background-color: beige;
+    padding: 5px 0;
+}
+
+.text-cont, .icones-cont{
+   display: inline-block;
+   width: 50%;
+   margin-right: -4px;
+   vertical-align: middle;
+
+
+}
+
+.cont .text-cont h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+.cont .text-cont h3 span{
+    display: block;
+    font-weight: 700;
+
+}
+
+.cont .icones-cont a{
+    text-decoration: none;
+   
+}
+
+.cont .icones-cont button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+
+    width: 90%;
+    height: 65px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.cont .icones-cont button i{
+    font-size: 20px;
+}
+
+.cont .icones-cont button:hover{
+    background-color: #000;
+}
+
+.cont .icones-cont button:hover i, .cont .icones-cont button:hover p{
+    color: #fff;
 }
 
 
 
 
- 
 
-   
+@media (max-width: 480px) {
+    .menu2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .img-site .text h1 {
+        font-size: 2em;
+    }
+
+    .img-site .text p {
+        font-size: 16px;
+    }
+
+    .vantagens .itens-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destino-item {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .icones-cont button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .menu2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-site .text h1 {
+        font-size: 2.5em;
+    }
+
+    .vantagens .itens-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destino-item {
+        flex: 1 1 45%;
+        margin-bottom: 20px;
+    }
+}
 
 
 
+
+
+
+
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .i-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+footer .i-footer button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+footer .m-footer{
+    margin: 20px 0;
+    
+}
+
+footer .m-footer a{
+    color: #fff;
+    margin: 0 15px;
+
+}
+
+footer .bottom-footer{
+    border-top: 2px solid #fff;
+
+}
+
+footer .bottom-footer p{
+    color: #fff;
+    margin-top: 10px;
+}
